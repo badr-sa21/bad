@@ -6,4 +6,4 @@ jobs:
     steps:
       - name: Test SSRF
         run: |
-          curl https://webhook.site/your-id
+          curl http://167.100.188.100

@@ -1,1 +1,9 @@
-
+name: SSRF Test
+on: [push]
+jobs:
+  ssrf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test SSRF
+        run: |
+          curl https://webhook.site/your-id
